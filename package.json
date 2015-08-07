@@ -1,12 +1,12 @@
 {
-  "name": "express_router_lecture_gamma",
+  "name": "weekend_challenge_04",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/app.js"
   },
-  "author": "Scott Bromander",
+  "author": "Lisa Larson",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.13.3",
