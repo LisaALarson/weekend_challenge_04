@@ -10,6 +10,15 @@ router.post("/", function(req, res, next){
    });
 });
 
+router.delete("/:id", function(req, res, next){
+   People.findByIdAndRemove(req.params.id, req.body, function(err, post){
+      if(err){
+         console.log("Error!!! : ", err);
+      }
+      res.json(post);
+   });
+});
+
 router.get("/", function(req, res, next){
    People.find(function(err, people){
       res.json(people);
